@@ -8,7 +8,14 @@
 
 import Foundation
 
-class Playlist {
+class Playlist: Equatable {
+    // now we can compair playlist and have access to helper methods 
+    static func == (lhs: Playlist, rhs: Playlist) -> Bool {
+        if lhs.title != rhs.title { return false }
+        if rhs.songs != rhs.songs { return false }
+        return true
+    }
+    
     
     var title: String
     var songs: [Song] = []
@@ -18,3 +25,4 @@ class Playlist {
         self.songs = songs
     }
 }
+

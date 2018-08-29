@@ -37,7 +37,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Ukb-OX-7Nq" detailTextLabel="08F-ia-Zct" rowHeight="105" style="IBUITableViewCellStyleValue1" id="XXU-tJ-Uil">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlistCell" textLabel="Ukb-OX-7Nq" detailTextLabel="08F-ia-Zct" rowHeight="105" style="IBUITableViewCellStyleValue1" id="XXU-tJ-Uil">
                                 <rect key="frame" x="0.0" y="111" width="375" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XXU-tJ-Uil" id="9qk-xq-o4N">
@@ -72,7 +72,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Playlist" id="Urd-RF-2Jq">
                         <barButtonItem key="backBarButtonItem" title="Back" id="TKt-Oe-dE7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4eR-5e-S9l">
+                            <connections>
+                                <action selector="addPlaylistButtonTapped:" destination="zJQ-gb-KkL" id="JE9-Mc-Pi0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playlistTextField" destination="U2P-xO-ujs" id="eOB-SK-6Lq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2r-xy-qiv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,6 +154,10 @@
                             <outlet property="delegate" destination="Hg4-M4-A2T" id="22Z-Ed-LYr"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="artistTextField" destination="Gtd-Zp-Rdv" id="BaH-8C-dvq"/>
+                        <outlet property="songTextField" destination="NCv-L8-x9K" id="pfk-OR-5Ux"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aje-U6-Qe1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,6 +15,7 @@
 		CAA65ED32137075B0044FB23 /* SongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA65ED22137075B0044FB23 /* SongTableViewController.swift */; };
 		CAA65ED8213708620044FB23 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA65ED7213708620044FB23 /* Song.swift */; };
 		CAA65EDA213708790044FB23 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA65ED9213708790044FB23 /* Playlist.swift */; };
+		CAA65EDD21370BCB0044FB23 /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA65EDC21370BCB0044FB23 /* PlaylistController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CAA65ED22137075B0044FB23 /* SongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewController.swift; sourceTree = "<group>"; };
 		CAA65ED7213708620044FB23 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		CAA65ED9213708790044FB23 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		CAA65EDC21370BCB0044FB23 /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,18 +65,18 @@
 				CAA65ED52137079B0044FB23 /* Resources */,
 				CAA65ED6213708260044FB23 /* UI */,
 				CAA65EDB213708880044FB23 /* Model */,
-				CAA65ED42137077D0044FB23 /* Controller */,
+				CAA65ED42137077D0044FB23 /* Controllers */,
 			);
 			path = PlaylistiOS21;
 			sourceTree = "<group>";
 		};
-		CAA65ED42137077D0044FB23 /* Controller */ = {
+		CAA65ED42137077D0044FB23 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CAA65ED22137075B0044FB23 /* SongTableViewController.swift */,
-				CAA65ED02137072E0044FB23 /* PlaylsitTableViewController.swift */,
+				CAA65EDF21370BF70044FB23 /* ViewControllers */,
+				CAA65EDE21370BE20044FB23 /* ModelController */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		CAA65ED52137079B0044FB23 /* Resources */ = {
@@ -103,6 +105,23 @@
 				CAA65ED9213708790044FB23 /* Playlist.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CAA65EDE21370BE20044FB23 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				CAA65EDC21370BCB0044FB23 /* PlaylistController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		CAA65EDF21370BF70044FB23 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAA65ED22137075B0044FB23 /* SongTableViewController.swift */,
+				CAA65ED02137072E0044FB23 /* PlaylsitTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +200,7 @@
 				CAA65ED32137075B0044FB23 /* SongTableViewController.swift in Sources */,
 				CAA65ED12137072E0044FB23 /* PlaylsitTableViewController.swift in Sources */,
 				CAA65EDA213708790044FB23 /* Playlist.swift in Sources */,
+				CAA65EDD21370BCB0044FB23 /* PlaylistController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
