@@ -11,6 +11,10 @@
 		CAA65EC42136FEA90044FB23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA65EC22136FEA90044FB23 /* Main.storyboard */; };
 		CAA65EC62136FEAC0044FB23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA65EC52136FEAC0044FB23 /* Assets.xcassets */; };
 		CAA65EC92136FEAC0044FB23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA65EC72136FEAC0044FB23 /* LaunchScreen.storyboard */; };
+		CAA65ED12137072E0044FB23 /* PlaylsitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA65ED02137072E0044FB23 /* PlaylsitTableViewController.swift */; };
+		CAA65ED32137075B0044FB23 /* SongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA65ED22137075B0044FB23 /* SongTableViewController.swift */; };
+		CAA65ED8213708620044FB23 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA65ED7213708620044FB23 /* Song.swift */; };
+		CAA65EDA213708790044FB23 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA65ED9213708790044FB23 /* Playlist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		CAA65EC52136FEAC0044FB23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAA65EC82136FEAC0044FB23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAA65ECA2136FEAC0044FB23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAA65ED02137072E0044FB23 /* PlaylsitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylsitTableViewController.swift; sourceTree = "<group>"; };
+		CAA65ED22137075B0044FB23 /* SongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewController.swift; sourceTree = "<group>"; };
+		CAA65ED7213708620044FB23 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		CAA65ED9213708790044FB23 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +60,49 @@
 		CAA65EBD2136FEA90044FB23 /* PlaylistiOS21 */ = {
 			isa = PBXGroup;
 			children = (
-				CAA65EBE2136FEA90044FB23 /* AppDelegate.swift */,
-				CAA65EC22136FEA90044FB23 /* Main.storyboard */,
-				CAA65EC52136FEAC0044FB23 /* Assets.xcassets */,
-				CAA65EC72136FEAC0044FB23 /* LaunchScreen.storyboard */,
-				CAA65ECA2136FEAC0044FB23 /* Info.plist */,
+				CAA65ED52137079B0044FB23 /* Resources */,
+				CAA65ED6213708260044FB23 /* UI */,
+				CAA65EDB213708880044FB23 /* Model */,
+				CAA65ED42137077D0044FB23 /* Controller */,
 			);
 			path = PlaylistiOS21;
+			sourceTree = "<group>";
+		};
+		CAA65ED42137077D0044FB23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAA65ED22137075B0044FB23 /* SongTableViewController.swift */,
+				CAA65ED02137072E0044FB23 /* PlaylsitTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CAA65ED52137079B0044FB23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAA65EBE2136FEA90044FB23 /* AppDelegate.swift */,
+				CAA65EC52136FEAC0044FB23 /* Assets.xcassets */,
+				CAA65ECA2136FEAC0044FB23 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CAA65ED6213708260044FB23 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CAA65EC22136FEA90044FB23 /* Main.storyboard */,
+				CAA65EC72136FEAC0044FB23 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CAA65EDB213708880044FB23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAA65ED7213708620044FB23 /* Song.swift */,
+				CAA65ED9213708790044FB23 /* Playlist.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA65ED8213708620044FB23 /* Song.swift in Sources */,
 				CAA65EBF2136FEA90044FB23 /* AppDelegate.swift in Sources */,
+				CAA65ED32137075B0044FB23 /* SongTableViewController.swift in Sources */,
+				CAA65ED12137072E0044FB23 /* PlaylsitTableViewController.swift in Sources */,
+				CAA65EDA213708790044FB23 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZPL9Y686UM;
-				INFOPLIST_FILE = PlaylistiOS21/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaylistiOS21/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZPL9Y686UM;
-				INFOPLIST_FILE = PlaylistiOS21/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaylistiOS21/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
